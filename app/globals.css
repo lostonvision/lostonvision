@@ -1,0 +1,267 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.signal-noise {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.45) 0.5px, transparent 0.5px);
+  background-size: 5px 5px;
+  mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+}
+
+.hero-scanlines {
+  background: repeating-linear-gradient(
+    180deg,
+    transparent 0,
+    transparent 3px,
+    rgba(255, 255, 255, 0.08) 4px
+  );
+}
+
+.future-silhouette {
+  position: relative;
+  overflow: hidden;
+  background: #181818;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+}
+
+.future-tee {
+  width: 64%;
+  height: 53%;
+  clip-path: polygon(20% 0, 38% 0, 44% 8%, 56% 8%, 62% 0, 80% 0, 100% 18%, 84% 39%, 75% 31%, 75% 100%, 25% 100%, 25% 31%, 16% 39%, 0 18%);
+}
+
+.future-tee::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: -2px;
+  width: 28%;
+  height: 14%;
+  transform: translateX(-50%);
+  border-radius: 0 0 50% 50%;
+  background: #d4d4ce;
+}
+
+.future-pants {
+  width: 50%;
+  height: 46%;
+  clip-path: polygon(4% 0, 96% 0, 91% 88%, 59% 100%, 50% 58%, 41% 100%, 9% 88%);
+}
+
+.future-pants::before {
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 10%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.future-pants::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 10%;
+  height: 48%;
+  transform: translateX(-50%);
+  background: #d4d4ce;
+}
+
+.future-cap {
+  width: 54%;
+  height: 34%;
+  margin-top: 8%;
+  border-radius: 100% 100% 18% 18% / 100% 100% 28% 28%;
+}
+
+.future-cap::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -16%;
+  width: 80%;
+  height: 24%;
+  transform: translateX(-50%);
+  border-radius: 0 0 100% 100%;
+  background: #181818;
+}
+
+.future-tape {
+  position: absolute;
+  top: 48%;
+  left: -35%;
+  width: 175%;
+  transform: rotate(-8deg);
+  background: #efeee7;
+  color: #111;
+  padding: 7px 0;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 4;
+}
+
+.signal-drifter {
+  animation: signal-drift 2.4s ease-in-out infinite alternate;
+}
+
+@keyframes signal-drift {
+  from { transform: translateX(-7px) rotate(-12deg); }
+  to { transform: translateX(7px) rotate(12deg); }
+}
+
+.garment-detail {
+  display: block;
+  background: currentColor;
+}
+
+.garment-collar {
+  width: 42%;
+  height: 22%;
+  border: 4px solid currentColor;
+  border-bottom: 0;
+  border-radius: 100% 100% 0 0;
+  background: transparent;
+}
+
+.garment-hombro {
+  width: 60%;
+  height: 12%;
+  clip-path: polygon(0 100%, 18% 0, 82% 0, 100% 100%);
+}
+
+.garment-marca {
+  width: 28%;
+  height: 28%;
+  border-radius: 50%;
+}
+
+.garment-bajo {
+  width: 62%;
+  height: 10%;
+}
+
+.frame-mark {
+  display: block;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.frame-mark-0 { width: 44%; height: 8%; transform: rotate(-25deg); }
+.frame-mark-1 { width: 30%; height: 30%; border-radius: 50%; }
+.frame-mark-2 { width: 42%; height: 42%; clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+.frame-mark-3 { width: 45%; height: 45%; border: 2px solid rgba(255, 255, 255, 0.45); background: transparent; }
+
+.shape-line {
+  position: absolute;
+  inset: 0;
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.shape-line::before,
+.shape-line::after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.shape-line::before {
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 2px;
+}
+
+.shape-line::after {
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 50%;
+}
+
+.detail-mark { display: block; background: currentColor; }
+.detail-mark-0 { width: 46%; height: 10%; transform: rotate(-18deg); }
+.detail-mark-1 { width: 30%; height: 30%; border-radius: 50%; }
+.detail-mark-2 { width: 42%; height: 42%; border: 2px solid currentColor; background: transparent; }
+.detail-eye { width: 48%; height: 28%; border: 2px solid currentColor; border-radius: 100%; position: relative; }
+.detail-eye::after { content: ""; position: absolute; left: 50%; top: 50%; width: 26%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; background: currentColor; }
+
+.eye-fragment { display: block; height: 30%; background: currentColor; }
+.eye-fragment-0 { width: 45%; border-radius: 100% 0 0 100%; transform: skewY(-22deg); }
+.eye-fragment-1 { width: 28%; border-radius: 50%; }
+.eye-fragment-2 { width: 45%; border-radius: 0 100% 100% 0; transform: skewY(22deg); }
+
+.frame-object { display: block; background: rgba(255, 255, 255, 0.72); }
+.frame-tee { width: 48%; height: 58%; clip-path: polygon(25% 0, 40% 0, 47% 10%, 53% 10%, 60% 0, 75% 0, 100% 20%, 84% 38%, 76% 31%, 76% 100%, 24% 100%, 24% 31%, 16% 38%, 0 20%); }
+.frame-cap { width: 62%; height: 36%; border-radius: 90% 90% 20% 20%; position: relative; }
+.frame-cap::after { content: ""; position: absolute; right: -35%; bottom: 4%; width: 60%; height: 25%; border-radius: 0 100% 100% 0; background: inherit; }
+.frame-short { width: 48%; height: 42%; clip-path: polygon(8% 0, 92% 0, 88% 90%, 56% 100%, 50% 54%, 44% 100%, 12% 90%); }
+.frame-tag { width: 34%; height: 46%; transform: rotate(18deg); clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 16%); }
+.frame-wall { width: 58%; height: 8%; transform: rotate(-25deg); }
+
+.second-look-scene { cursor: crosshair; }
+.scene-veil { pointer-events: none; position: absolute; inset: -12%; z-index: 2; transition: transform 0.12s linear; }
+.scene-veil-one { background: radial-gradient(ellipse at 20% 70%, rgba(195, 207, 208, 0.24), transparent 24%), radial-gradient(ellipse at 72% 36%, rgba(20, 37, 52, 0.55), transparent 30%); }
+.scene-veil-two { background: linear-gradient(110deg, rgba(6, 15, 24, 0.4) 18%, transparent 46%, rgba(220, 211, 193, 0.12) 70%, transparent 85%); mix-blend-mode: screen; }
+.scene-veil-three { background: radial-gradient(ellipse at 74% 60%, rgba(8, 15, 24, 0.75), transparent 27%); }
+.scene-fragment { width: 40px; height: 40px; border: 1px solid rgba(255,255,255,0.8); border-radius: 50%; background: rgba(5, 12, 18, 0.7); color: white; opacity: 0; transform: translate(-50%, -50%) scale(0.5); transition: opacity 0.25s, transform 0.25s; }
+.scene-fragment-visible { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+.scene-fragment-found { background: white; color: #06101a; }
+.scene-fragment-eye { display: block; width: 18px; height: 10px; border: 1px solid currentColor; border-radius: 100%; margin: auto; position: relative; }
+.scene-fragment-eye::after { content: ""; position: absolute; width: 4px; height: 4px; background: currentColor; border-radius: 50%; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+
+.landscape-layer { color: white; }
+.landscape-sky { background: #152b45; }
+.landscape-horizon { background: #a89782; }
+.landscape-ocean { background: #18384a; }
+.landscape-stone { background: #465052; }
+.landscape-symbol { display: block; width: 80px; height: 2px; background: rgba(255,255,255,0.6); }
+.landscape-symbol-sky { width: 54px; opacity: 0.55; }
+.landscape-symbol-horizon { width: 100px; background: #e3d0af; }
+.landscape-symbol-ocean { width: 72px; transform: rotate(-2deg); }
+.landscape-symbol-stone { width: 42px; height: 12px; background: rgba(255,255,255,0.28); }
+
+.lov-key { position: relative; width: 60px; height: 130px; color: #e9e5da; }
+.lov-key-small { width: 24px; height: 36px; transform: scale(0.78); transform-origin: center; }
+.lov-key-head { position: absolute; left: 50%; top: 0; width: 54px; height: 31px; transform: translateX(-50%); border: 3px solid currentColor; border-radius: 100%; }
+.lov-key-head::after { content: ""; position: absolute; left: 50%; top: 50%; width: 20px; height: 20px; transform: translate(-50%, -55%) rotate(45deg); border-left: 3px solid currentColor; border-bottom: 3px solid currentColor; }
+.lov-key-head span { position: absolute; left: 50%; top: 50%; width: 8px; height: 8px; transform: translate(-50%, -50%); border-radius: 50%; background: currentColor; }
+.lov-key-stem { position: absolute; left: 50%; top: 29px; width: 8px; height: 70px; transform: translateX(-50%); background: currentColor; }
+.lov-key-teeth { position: absolute; left: 50%; top: 86px; width: 28px; height: 30px; transform: translateX(-4px); border-bottom: 8px solid currentColor; border-right: 8px solid currentColor; }
+.lov-key-place { color: #aab8b9; }.lov-key-horizon { color: #d3bd99; }
+
+.drop-door { background: #0a141c; }
+.door-frame { position: absolute; top: 8%; bottom: 8%; left: 50%; width: min(48%, 380px); transform: translateX(-50%); overflow: hidden; border: 1px solid rgba(255,255,255,0.18); box-shadow: 0 20px 55px rgba(0,0,0,0.45); transition: overflow 0s linear 0.7s; }
+.door-panel { position: absolute; top: 0; bottom: 0; width: 50%; background: linear-gradient(120deg, #152632, #071016); transition: transform 1.6s cubic-bezier(.7,0,.2,1); }
+.door-panel-left { left: 0; border-right: 1px solid rgba(255,255,255,0.12); }.door-panel-right { right: 0; border-left: 1px solid rgba(255,255,255,0.12); }
+.door-light { position: absolute; inset: 0; opacity: 0; background: url('/images/hero-new.png') center/cover; filter: brightness(0.08); transform: scale(0.92); transition: opacity 0.7s ease 0.45s, filter 1.8s ease 0.6s, transform 1.8s ease 0.45s; }
+.drop-door-open .door-frame { overflow: visible; }.drop-door-open .door-panel-left { transform: translateX(-105%); }.drop-door-open .door-panel-right { transform: translateX(105%); }.drop-door-open .door-light { opacity: 0; transform: scale(1); }
+
+.door-fullscreen-reveal { position: fixed; inset: 0; z-index: 60; pointer-events: none; background: url('/images/hero-new.png') center/cover; clip-path: circle(0% at var(--door-x) var(--door-y)); animation: leave-the-door 3.2s cubic-bezier(.65,0,.2,1) forwards; }
+
+@keyframes leave-the-door { 0%, 18% { clip-path: circle(0% at var(--door-x) var(--door-y)); filter: brightness(0.08); } 100% { clip-path: circle(150% at var(--door-x) var(--door-y)); filter: brightness(0.82); } }
+.keyhole { position: relative; display: flex; align-items: center; justify-content: center; width: 56px; height: 78px; border: 1px solid rgba(255,255,255,0.35); border-radius: 28px 28px 10px 10px; background: rgba(2,7,11,0.6); }.keyhole span { width: 8px; height: 35px; border-radius: 10px; background: rgba(255,255,255,0.35); }.keyhole-filled { border-color: white; background: rgba(255,255,255,0.1); }
