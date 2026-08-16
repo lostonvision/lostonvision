@@ -8,7 +8,7 @@ export default function Hero() {
             <div className="hero-pedestal-glow absolute inset-0" aria-hidden="true" />
             <div className="hero-logo-stage absolute inset-x-0 top-[31%] z-[1] flex justify-center" aria-hidden="true">
                 <Image
-                    src="/images/lov-mark.jpg"
+                    src="/images/lov-mark-transparent.png"
                     alt=""
                     width={620}
                     height={620}
