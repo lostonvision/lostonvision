@@ -21,22 +21,8 @@ export default function ProductCard({ piece }: Props) {
                 {piece.kind === "short" ? (
                     <svg className="future-short-svg" viewBox="0 0 240 180" aria-hidden="true">
                         <path
-                            d="M35 25 Q120 12 205 25 L197 137 Q181 154 151 149 L120 104 L89 149 Q59 154 43 137 Z"
+                            d="M35 25 L205 25 L198 128 Q196 145 179 146 L154 146 Q146 145 141 136 L120 109 L99 136 Q94 145 86 146 L61 146 Q44 145 42 128 Z"
                             fill="#bfc0b8"
-                        />
-                        <path
-                            d="M43 36 Q120 47 197 36"
-                            fill="none"
-                            stroke="rgba(0, 0, 0, 0.24)"
-                            strokeWidth="5"
-                            strokeLinecap="round"
-                        />
-                        <path
-                            d="M76 52 Q91 70 101 72 M164 52 Q149 70 139 72"
-                            fill="none"
-                            stroke="rgba(0, 0, 0, 0.13)"
-                            strokeWidth="3"
-                            strokeLinecap="round"
                         />
                     </svg>
                 ) : (
