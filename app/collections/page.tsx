@@ -25,7 +25,7 @@ export default function CollectionsPage() {
                     </div>
                 </section>
 
-                <Products />
+                <Products showAll />
                 <Footer />
             </main>
         </>
