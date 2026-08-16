@@ -173,14 +173,14 @@ html {
 .future-cap::after {
   content: "";
   position: absolute;
-  left: 39%;
-  bottom: -13%;
-  width: 74%;
-  height: 28%;
-  transform: rotate(-5deg);
-  border-radius: 25% 100% 100% 48%;
+  left: 50%;
+  bottom: -16%;
+  width: 88%;
+  height: 32%;
+  transform: translateX(-50%);
+  border-radius: 30% 30% 100% 100%;
   background: inherit;
-  box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 9px 11px rgba(0, 0, 0, 0.22);
 }
 
 .future-tape {
