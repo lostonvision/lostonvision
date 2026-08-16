@@ -6,6 +6,7 @@ export default function Hero() {
             <Image src="/images/hero-pedestal-v1.png" alt="" fill className="object-cover" priority />
             <div className="absolute inset-0 bg-black/30" />
             <div className="hero-pedestal-glow absolute inset-0" aria-hidden="true" />
+            <div className="hero-grain absolute inset-0" aria-hidden="true" />
             <div className="hero-logo-stage absolute inset-x-0 top-[31%] z-[1] flex justify-center" aria-hidden="true">
                 <Image
                     src="/images/lov-mark-transparent.png"
