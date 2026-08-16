@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LOSTONVISION — The Second Look",
+  title: "LOSTONVISION",
   description:
-      "LOSTONVISION: una experiencia visual antes del Drop 01.",
+      "LOSTONVISION. Streetwear para ver diferente.",
 };
 
 export default function RootLayout({

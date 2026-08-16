@@ -7,9 +7,9 @@ export default function Navbar({ variant = "dark" }: { variant?: "dark" | "light
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const isLight = variant === "light";
     const links = [
-        { label: "Archive", href: "/#shop" },
-        { label: "The Second Look", href: "/the-vision" },
-        { label: "Manifesto", href: "/#about" },
+        { label: "Shop", href: "/#shop" },
+        { label: "Collections", href: "/collections" },
+        { label: "About", href: "/#about" },
         { label: "Contact", href: "/#contact" },
     ];
 

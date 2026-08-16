@@ -1,10 +1,5 @@
-import DropArchive from "@/components/DropArchive";
-
-export const metadata = {
-    title: "DROP 01 — STILL WATERS / LOSTONVISION",
-    description: "El archivo incompleto del primer drop de LOSTONVISION.",
-};
+import { redirect } from "next/navigation";
 
 export default function DropOnePage() {
-    return <DropArchive />;
+    redirect("/collections");
 }
