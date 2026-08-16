@@ -98,6 +98,20 @@ html {
   transform: translateY(-5px);
 }
 
+.future-short-svg {
+  position: relative;
+  z-index: 1;
+  width: 68%;
+  height: auto;
+  filter: drop-shadow(0 24px 16px rgba(0, 0, 0, 0.62));
+  transition: transform 500ms ease, filter 500ms ease;
+}
+
+.group:hover .future-short-svg {
+  filter: drop-shadow(0 30px 21px rgba(0, 0, 0, 0.72));
+  transform: translateY(-5px);
+}
+
 .future-tee {
   width: 64%;
   height: 53%;
