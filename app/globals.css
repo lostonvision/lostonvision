@@ -173,12 +173,12 @@ html {
 .future-cap::after {
   content: "";
   position: absolute;
-  left: 58%;
-  bottom: -20%;
-  width: 58%;
+  left: 39%;
+  bottom: -13%;
+  width: 74%;
   height: 28%;
-  transform: translateX(-10%) rotate(-7deg);
-  border-radius: 35% 100% 100% 40%;
+  transform: rotate(-5deg);
+  border-radius: 25% 100% 100% 48%;
   background: inherit;
   box-shadow: 6px 8px 10px rgba(0, 0, 0, 0.22);
 }
