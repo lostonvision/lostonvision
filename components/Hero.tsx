@@ -15,8 +15,8 @@ export default function Hero() {
                 <p className="mb-6 text-xs tracking-[0.32em] text-white/65">LOSTONVISION PRESENTS</p>
                 <h1 className="text-5xl font-medium tracking-[-0.06em] sm:text-7xl lg:text-8xl">LOSTONVISION</h1>
                 <p className="mt-5 text-sm tracking-[0.18em] text-gray-300 sm:text-base">SEE DIFFERENT</p>
-                <a href="#shop" className="mt-10 border border-white px-8 py-4 text-xs font-semibold tracking-[0.18em] transition hover:bg-white hover:text-black">
-                    SHOP NOW
+                <a href="/collections" className="mt-10 border border-white px-8 py-4 text-xs font-semibold tracking-[0.18em] transition hover:bg-white hover:text-black">
+                    VER DROP 01
                 </a>
             </div>
 
