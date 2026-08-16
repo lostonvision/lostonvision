@@ -18,7 +18,7 @@ export default function ProductCard({ piece }: Props) {
     return (
         <article className="group block">
             <div className="future-silhouette relative flex aspect-[3/4] items-center justify-center bg-[#181818]">
-                <div className={`${silhouetteClass} bg-[#d4d4ce]`} aria-hidden="true" />
+                <div className={`future-piece ${silhouetteClass} bg-[#d4d4ce]`} aria-hidden="true" />
                 <div className="future-tape">PRÓXIMAMENTE / LOSTONVISION / DROP 01 / PRÓXIMAMENTE</div>
             </div>
 
