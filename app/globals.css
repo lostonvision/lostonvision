@@ -146,10 +146,33 @@ html {
 }
 
 .future-short {
-  width: 58%;
-  height: 31%;
-  clip-path: polygon(7% 0, 93% 0, 88% 90%, 58% 100%, 50% 54%, 42% 100%, 12% 90%);
+  width: 60%;
+  height: 36%;
+  clip-path: polygon(5% 0, 95% 0, 91% 88%, 62% 100%, 50% 66%, 38% 100%, 9% 88%);
   box-shadow: inset 14px 0 20px rgba(255, 255, 255, 0.16), inset -14px -12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.future-short::before {
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 9%;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.22);
+  box-shadow: 0 3px 0 rgba(255, 255, 255, 0.13);
+}
+
+.future-short::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  width: 12%;
+  height: 44%;
+  transform: translateX(-50%);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  background: #181818;
 }
 
 .future-cap {
