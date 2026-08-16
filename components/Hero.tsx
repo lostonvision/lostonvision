@@ -3,9 +3,19 @@ import Image from "next/image";
 export default function Hero() {
     return (
         <section className="relative min-h-screen overflow-hidden">
-            <Image src="/images/hero-new.png" alt="LOSTONVISION Drop 01" fill className="object-cover" priority />
-            <div className="absolute inset-0 bg-black/55" />
-            <div className="hero-scanlines absolute inset-0 opacity-30" />
+            <Image src="/images/hero-pedestal-v1.png" alt="" fill className="object-cover" priority />
+            <div className="absolute inset-0 bg-black/30" />
+            <div className="hero-pedestal-glow absolute inset-0" aria-hidden="true" />
+            <div className="hero-logo-stage absolute inset-x-0 top-[31%] z-[1] flex justify-center" aria-hidden="true">
+                <Image
+                    src="/images/lov-mark.jpg"
+                    alt=""
+                    width={620}
+                    height={620}
+                    className="hero-logo-spin h-auto w-[clamp(250px,34vw,560px)] mix-blend-screen"
+                />
+            </div>
+            <div className="hero-scanlines absolute inset-0 opacity-15" />
 
             <p className="absolute left-6 top-28 z-10 text-[10px] font-medium tracking-[0.25em] text-white/65 sm:left-10">
                 LOSTONVISION / DROP 01
