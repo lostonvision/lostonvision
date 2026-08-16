@@ -9,12 +9,12 @@ export default function EarlyAccess() {
                             Hecho para<br />ver diferente.
                         </h2>
                         <p className="mt-6 max-w-xl text-lg leading-8 text-white/60">
-                            Conoce la primera colección de LOSTONVISION y descubre cada pieza a tu ritmo.
+                            El primer drop está en camino. Algunas cosas se entienden mejor cuando vuelves a mirar.
                         </p>
                     </div>
                     <div className="md:justify-self-end">
                         <a href="/collections" className="inline-block bg-white px-7 py-4 text-xs font-semibold uppercase tracking-widest text-black transition hover:bg-white/75">
-                            VER COLECCIÓN →
+                            VER ADELANTO →
                         </a>
                         <p className="mt-4 text-sm text-white/45">DROP 01 / LOSTONVISION</p>
                     </div>

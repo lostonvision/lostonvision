@@ -89,6 +89,12 @@ html {
   background: #d4d4ce;
 }
 
+.future-short {
+  width: 58%;
+  height: 31%;
+  clip-path: polygon(7% 0, 93% 0, 88% 90%, 58% 100%, 50% 54%, 42% 100%, 12% 90%);
+}
+
 .future-cap {
   width: 54%;
   height: 34%;

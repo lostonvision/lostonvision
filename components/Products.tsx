@@ -7,10 +7,10 @@ export default function Products() {
             <div className="mx-auto mb-14 flex max-w-7xl flex-col gap-6 border-b border-black pb-8 md:flex-row md:items-end md:justify-between">
                 <div>
                     <p className="text-xs font-medium tracking-[0.24em] text-black/50">DROP 01 / LOSTONVISION</p>
-                    <h2 className="mt-4 text-5xl font-medium tracking-[-0.06em] sm:text-7xl">NUEVA COLECCIÓN</h2>
+                    <h2 className="mt-4 text-5xl font-medium tracking-[-0.06em] sm:text-7xl">PRÓXIMAMENTE</h2>
                 </div>
                 <p className="max-w-xs text-sm leading-6 text-black/60">
-                    Piezas esenciales pensadas para formar parte de tu visión.
+                    Las piezas están en camino. Vuelve a mirar cuando llegue el momento.
                 </p>
             </div>
 
