@@ -103,11 +103,12 @@ html {
   stroke: rgba(0, 0, 0, 0.76);
   stroke-width: 1.15px;
   paint-order: stroke;
+  opacity: 0.92;
 }
 
 .hero-pedestal-cut-edge {
   fill: none;
-  stroke: rgba(194, 212, 215, 0.2);
+  stroke: rgba(205, 216, 216, 0.3);
   stroke-width: 0.65px;
   transform: translateY(-0.65px);
 }
