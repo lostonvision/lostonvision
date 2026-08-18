@@ -114,6 +114,50 @@ html {
   transform: translateY(-0.65px);
 }
 
+@media (max-width: 639px) {
+  .hero-shell,
+  .hero-copy {
+    min-height: 100svh;
+  }
+
+  .hero-pedestal-background-mobile {
+    object-position: center center;
+  }
+
+  .hero-copy {
+    justify-content: flex-start;
+    padding-top: 7.25rem;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.35rem, 11vw, 3rem);
+  }
+
+  .hero-logo-stage {
+    top: 43%;
+  }
+
+  .hero-logo-spin {
+    width: min(44vw, 190px);
+  }
+
+  .hero-pedestal-inscription {
+    bottom: 15%;
+    width: min(55vw, 230px);
+  }
+
+  .hero-pedestal-arc-text {
+    font-size: 34px;
+    letter-spacing: 9px;
+  }
+
+  .hero-pedestal-mark {
+    width: 19px;
+    right: -15px;
+    top: 5px;
+  }
+}
+
 @keyframes hero-logo-rotate {
   from {
     transform: rotateX(7deg) rotateY(0deg);

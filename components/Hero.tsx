@@ -2,8 +2,9 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section className="relative min-h-screen overflow-hidden">
-            <Image src="/images/hero-pedestal-v1.png" alt="" fill className="object-cover" priority />
+        <section className="hero-shell relative min-h-screen overflow-hidden">
+            <Image src="/images/hero-pedestal-v1.png" alt="" fill className="hero-pedestal-background hidden object-cover sm:block" priority />
+            <Image src="/images/hero-pedestal-mobile-v1.png" alt="" fill className="hero-pedestal-background-mobile block object-cover sm:hidden" priority />
             <div className="absolute inset-0 bg-black/30" />
             <div className="hero-pedestal-glow absolute inset-0" aria-hidden="true" />
             <div className="hero-grain absolute inset-0" aria-hidden="true" />
@@ -45,7 +46,7 @@ export default function Hero() {
                 LOSTONVISION / DROP 01
             </p>
 
-            <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center text-white">
+            <div className="hero-copy relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center text-white">
                 <p className="mb-6 text-xs tracking-[0.32em] text-white/65">LOSTONVISION PRESENTS</p>
                 <h1 className="text-5xl font-medium tracking-[-0.06em] sm:text-7xl lg:text-8xl">LOSTONVISION</h1>
                 <p className="mt-5 text-sm tracking-[0.18em] text-gray-300 sm:text-base">SEE DIFFERENT</p>
