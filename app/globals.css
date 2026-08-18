@@ -63,6 +63,29 @@ html {
   transform-style: preserve-3d;
 }
 
+.hero-pedestal-inscription {
+  color: #aebfca;
+  filter: drop-shadow(0 1px 0 rgba(227, 246, 255, 0.34)) drop-shadow(0 0 10px rgba(106, 159, 192, 0.34));
+  mix-blend-mode: screen;
+  opacity: 0.94;
+}
+
+.hero-pedestal-mark {
+  filter: sepia(12%) saturate(65%) hue-rotate(160deg) brightness(1.35);
+  opacity: 0.82;
+}
+
+.hero-pedestal-name {
+  background: linear-gradient(180deg, #e4f0f4 0%, #9bb4c2 45%, #d0e1e7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: clamp(9px, 1.05vw, 14px);
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-shadow: 0 1px 0 rgba(4, 10, 15, 0.88);
+}
+
 @keyframes hero-logo-rotate {
   from {
     transform: rotateX(7deg) rotateY(0deg);

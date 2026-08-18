@@ -16,6 +16,16 @@ export default function Hero() {
                     className="hero-logo-spin h-auto w-[clamp(250px,34vw,560px)] mix-blend-screen"
                 />
             </div>
+            <div className="hero-pedestal-inscription absolute bottom-[15%] left-1/2 z-[2] flex -translate-x-1/2 items-center gap-2 whitespace-nowrap" aria-hidden="true">
+                <Image
+                    src="/images/lov-mark-transparent.png"
+                    alt=""
+                    width={54}
+                    height={30}
+                    className="hero-pedestal-mark h-auto w-7"
+                />
+                <span className="hero-pedestal-name">LOSTONVISION</span>
+            </div>
             <div className="hero-scanlines absolute inset-0 opacity-15" />
 
             <p className="absolute left-6 top-28 z-10 text-[10px] font-medium tracking-[0.25em] text-white/65 sm:left-10">
