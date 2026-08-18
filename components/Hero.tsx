@@ -16,7 +16,7 @@ export default function Hero() {
                     className="hero-logo-spin h-auto w-[clamp(250px,34vw,560px)] mix-blend-screen"
                 />
             </div>
-            <div className="hero-pedestal-inscription absolute bottom-[9%] left-1/2 z-[2] w-[clamp(230px,29vw,410px)] -translate-x-1/2" aria-hidden="true">
+            <div className="hero-pedestal-inscription absolute bottom-[9%] left-1/2 z-[2] w-[clamp(260px,33vw,460px)] -translate-x-1/2" aria-hidden="true">
                 <svg className="hero-pedestal-wordmark" viewBox="0 0 440 72" role="presentation">
                     <defs>
                         <linearGradient id="pedestal-lettering" x1="0" x2="0" y1="0" y2="1">
@@ -26,8 +26,12 @@ export default function Hero() {
                             <stop offset="100%" stopColor="#e0e4e1" />
                         </linearGradient>
                         <path id="pedestal-arc" d="M18 34 Q220 42 422 34" />
+                        <filter id="pedestal-engraving" x="-10%" y="-25%" width="120%" height="150%">
+                            <feDropShadow dx="0" dy="1.5" stdDeviation="0.75" floodColor="#061016" floodOpacity="0.92" />
+                            <feDropShadow dx="0" dy="-0.8" stdDeviation="0.45" floodColor="#e4ecea" floodOpacity="0.3" />
+                        </filter>
                     </defs>
-                    <text className="hero-pedestal-arc-text">
+                    <text className="hero-pedestal-arc-text" filter="url(#pedestal-engraving)">
                         <textPath href="#pedestal-arc" startOffset="50%" textAnchor="middle">LOSTONVISION</textPath>
                     </text>
                 </svg>
