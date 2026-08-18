@@ -67,10 +67,11 @@ export default function Hero() {
             </p>
 
             <div className="hero-copy relative z-10 flex min-h-screen flex-col items-center justify-center px-6 text-center text-white">
-                <p className="mb-6 text-xs tracking-[0.32em] text-white/65">LOSTONVISION PRESENTS</p>
-                <h1 className="text-5xl font-medium tracking-[-0.06em] sm:text-7xl lg:text-8xl">LOSTONVISION</h1>
-                <p className="mt-5 text-sm tracking-[0.18em] text-gray-300 sm:text-base">SEE DIFFERENT</p>
-                <a href="/collections" className="mt-10 border border-white px-8 py-4 text-xs font-semibold tracking-[0.18em] transition hover:bg-white hover:text-black">
+                <h1 className="sr-only">LOSTONVISION</h1>
+                <p className="text-[10px] tracking-[0.32em] text-white/60 sm:text-xs">LOSTONVISION PRESENTS</p>
+                <span className="my-5 h-px w-10 bg-white/35" aria-hidden="true" />
+                <p className="text-2xl font-medium tracking-[0.2em] text-white sm:text-4xl">SEE DIFFERENT</p>
+                <a href="/collections" className="mt-9 border border-white px-8 py-4 text-xs font-semibold tracking-[0.18em] transition hover:bg-white hover:text-black">
                     VER DROP 01
                 </a>
             </div>
