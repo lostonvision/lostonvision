@@ -65,13 +65,18 @@ html {
 
 .hero-pedestal-inscription {
   color: #aebfca;
-  filter: drop-shadow(0 -1px 0 rgba(211, 232, 240, 0.25)) drop-shadow(0 2px 1px rgba(0, 0, 0, 0.72));
+  filter: drop-shadow(0 -1px 0 rgba(236, 241, 239, 0.28)) drop-shadow(0 2px 1px rgba(0, 0, 0, 0.72));
   opacity: 0.88;
 }
 
 .hero-pedestal-mark {
-  filter: sepia(12%) saturate(65%) hue-rotate(160deg) brightness(1.35);
-  opacity: 0.82;
+  display: block;
+  width: 30px;
+  aspect-ratio: 1.78;
+  background: linear-gradient(180deg, #f0f2ef 0%, #bfc7c6 50%, #b7cbd2 76%, #e0e4e1 100%);
+  filter: drop-shadow(0 -1px 0 rgba(236, 241, 239, 0.28)) drop-shadow(0 2px 1px rgba(0, 0, 0, 0.72));
+  mask: url("/images/lov-mark-transparent.png") center / contain no-repeat;
+  -webkit-mask: url("/images/lov-mark-transparent.png") center / contain no-repeat;
 }
 
 .hero-pedestal-wordmark {

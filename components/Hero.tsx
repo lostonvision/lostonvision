@@ -20,23 +20,18 @@ export default function Hero() {
                 <svg className="hero-pedestal-wordmark" viewBox="0 0 440 72" role="presentation">
                     <defs>
                         <linearGradient id="pedestal-lettering" x1="0" x2="0" y1="0" y2="1">
-                            <stop offset="0%" stopColor="#d8e7ec" />
-                            <stop offset="52%" stopColor="#7897a8" />
-                            <stop offset="100%" stopColor="#b5cbd5" />
+                            <stop offset="0%" stopColor="#f0f2ef" />
+                            <stop offset="50%" stopColor="#bfc7c6" />
+                            <stop offset="76%" stopColor="#b7cbd2" />
+                            <stop offset="100%" stopColor="#e0e4e1" />
                         </linearGradient>
-                        <path id="pedestal-arc" d="M18 27 Q220 56 422 27" />
+                        <path id="pedestal-arc" d="M18 34 Q220 42 422 34" />
                     </defs>
                     <text className="hero-pedestal-arc-text">
                         <textPath href="#pedestal-arc" startOffset="50%" textAnchor="middle">LOSTONVISION</textPath>
                     </text>
                 </svg>
-                <Image
-                    src="/images/lov-mark-transparent.png"
-                    alt=""
-                    width={54}
-                    height={30}
-                    className="hero-pedestal-mark absolute -right-8 top-5 h-auto w-7"
-                />
+                <span className="hero-pedestal-mark absolute -right-5 top-5" />
             </div>
             <div className="hero-scanlines absolute inset-0 opacity-15" />
 
