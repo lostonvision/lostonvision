@@ -65,6 +65,7 @@ html {
 }
 
 .hero-pedestal-inscription {
+  bottom: 12%;
   color: #81949d;
   filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.8));
   opacity: 0.94;
@@ -142,7 +143,7 @@ html {
   }
 
   .hero-pedestal-inscription {
-    bottom: 10%;
+    bottom: 16%;
     width: min(55vw, 230px);
   }
 
