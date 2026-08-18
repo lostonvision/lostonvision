@@ -65,9 +65,8 @@ html {
 
 .hero-pedestal-inscription {
   color: #aebfca;
-  filter: drop-shadow(0 1px 0 rgba(227, 246, 255, 0.4)) drop-shadow(0 0 12px rgba(106, 159, 192, 0.38));
-  mix-blend-mode: screen;
-  opacity: 0.98;
+  filter: drop-shadow(0 -1px 0 rgba(211, 232, 240, 0.25)) drop-shadow(0 2px 1px rgba(0, 0, 0, 0.72));
+  opacity: 0.88;
 }
 
 .hero-pedestal-mark {
@@ -76,7 +75,7 @@ html {
 }
 
 .hero-pedestal-wordmark {
-  width: clamp(220px, 28vw, 390px);
+  width: 100%;
   height: auto;
   overflow: visible;
 }
@@ -84,12 +83,12 @@ html {
 .hero-pedestal-arc-text {
   fill: url(#pedestal-lettering);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
+  font-size: 29px;
   font-weight: 600;
-  letter-spacing: 7px;
+  letter-spacing: 8px;
   paint-order: stroke;
-  stroke: rgba(4, 10, 15, 0.72);
-  stroke-width: 1.25px;
+  stroke: rgba(5, 13, 19, 0.88);
+  stroke-width: 1.8px;
 }
 
 @keyframes hero-logo-rotate {
