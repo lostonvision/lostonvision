@@ -16,7 +16,7 @@ export default function Hero() {
                     className="hero-logo-spin h-auto w-[clamp(250px,34vw,560px)] mix-blend-screen"
                 />
             </div>
-            <div className="hero-pedestal-inscription absolute bottom-[13%] left-1/2 z-[2] w-[clamp(230px,29vw,410px)] -translate-x-1/2" aria-hidden="true">
+            <div className="hero-pedestal-inscription absolute bottom-[9%] left-1/2 z-[2] w-[clamp(230px,29vw,410px)] -translate-x-1/2" aria-hidden="true">
                 <svg className="hero-pedestal-wordmark" viewBox="0 0 440 72" role="presentation">
                     <defs>
                         <linearGradient id="pedestal-lettering" x1="0" x2="0" y1="0" y2="1">
