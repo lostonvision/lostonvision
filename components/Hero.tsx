@@ -19,19 +19,20 @@ export default function Hero() {
             <div className="hero-pedestal-inscription absolute bottom-[9%] left-1/2 z-[2] w-[clamp(260px,33vw,460px)] -translate-x-1/2" aria-hidden="true">
                 <svg className="hero-pedestal-wordmark" viewBox="0 0 440 72" role="presentation">
                     <defs>
-                        <linearGradient id="pedestal-lettering" x1="0" x2="0" y1="0" y2="1">
-                            <stop offset="0%" stopColor="#f0f2ef" />
-                            <stop offset="50%" stopColor="#bfc7c6" />
-                            <stop offset="76%" stopColor="#b7cbd2" />
-                            <stop offset="100%" stopColor="#e0e4e1" />
+                        <linearGradient id="pedestal-cut" x1="0" x2="0" y1="0" y2="1">
+                            <stop offset="0%" stopColor="#18272f" />
+                            <stop offset="58%" stopColor="#0a141a" />
+                            <stop offset="100%" stopColor="#273943" />
                         </linearGradient>
-                        <path id="pedestal-arc" d="M18 34 Q220 42 422 34" />
-                        <filter id="pedestal-engraving" x="-10%" y="-25%" width="120%" height="150%">
-                            <feDropShadow dx="0" dy="1.5" stdDeviation="0.75" floodColor="#061016" floodOpacity="0.92" />
-                            <feDropShadow dx="0" dy="-0.8" stdDeviation="0.45" floodColor="#e4ecea" floodOpacity="0.3" />
-                        </filter>
+                        <path id="pedestal-arc" d="M18 38 Q220 27 422 38" />
                     </defs>
-                    <text className="hero-pedestal-arc-text" filter="url(#pedestal-engraving)">
+                    <text className="hero-pedestal-arc-text hero-pedestal-cut-shadow">
+                        <textPath href="#pedestal-arc" startOffset="50%" textAnchor="middle">LOSTONVISION</textPath>
+                    </text>
+                    <text className="hero-pedestal-arc-text hero-pedestal-cut-face">
+                        <textPath href="#pedestal-arc" startOffset="50%" textAnchor="middle">LOSTONVISION</textPath>
+                    </text>
+                    <text className="hero-pedestal-arc-text hero-pedestal-cut-edge">
                         <textPath href="#pedestal-arc" startOffset="50%" textAnchor="middle">LOSTONVISION</textPath>
                     </text>
                 </svg>

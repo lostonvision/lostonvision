@@ -64,17 +64,17 @@ html {
 }
 
 .hero-pedestal-inscription {
-  color: #aebfca;
-  filter: drop-shadow(0 -1px 0 rgba(236, 241, 239, 0.28)) drop-shadow(0 2px 1px rgba(0, 0, 0, 0.72));
-  opacity: 0.88;
+  color: #81949d;
+  filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.8));
+  opacity: 0.94;
 }
 
 .hero-pedestal-mark {
   display: block;
   width: 30px;
   aspect-ratio: 1.78;
-  background: linear-gradient(180deg, #f0f2ef 0%, #bfc7c6 50%, #b7cbd2 76%, #e0e4e1 100%);
-  filter: drop-shadow(0 -1px 0 rgba(236, 241, 239, 0.34)) drop-shadow(0 2px 1px rgba(0, 0, 0, 0.88));
+  background: linear-gradient(180deg, #263a44 0%, #0a151b 62%, #314751 100%);
+  filter: drop-shadow(0 -1px 0 rgba(181, 203, 208, 0.22)) drop-shadow(0 2px 1px rgba(0, 0, 0, 0.92));
   mask: url("/images/lov-mark-transparent.png") center / contain no-repeat;
   -webkit-mask: url("/images/lov-mark-transparent.png") center / contain no-repeat;
 }
@@ -86,14 +86,30 @@ html {
 }
 
 .hero-pedestal-arc-text {
-  fill: url(#pedestal-lettering);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 34px;
   font-weight: 600;
   letter-spacing: 9px;
+}
+
+.hero-pedestal-cut-shadow {
+  fill: #020608;
+  opacity: 0.94;
+  transform: translateY(1.6px);
+}
+
+.hero-pedestal-cut-face {
+  fill: url(#pedestal-cut);
+  stroke: rgba(0, 0, 0, 0.76);
+  stroke-width: 1.15px;
   paint-order: stroke;
-  stroke: rgba(5, 13, 19, 0.88);
-  stroke-width: 1.8px;
+}
+
+.hero-pedestal-cut-edge {
+  fill: none;
+  stroke: rgba(194, 212, 215, 0.2);
+  stroke-width: 0.65px;
+  transform: translateY(-0.65px);
 }
 
 @keyframes hero-logo-rotate {
