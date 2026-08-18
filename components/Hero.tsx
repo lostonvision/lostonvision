@@ -16,15 +16,27 @@ export default function Hero() {
                     className="hero-logo-spin h-auto w-[clamp(250px,34vw,560px)] mix-blend-screen"
                 />
             </div>
-            <div className="hero-pedestal-inscription absolute bottom-[15%] left-1/2 z-[2] flex -translate-x-1/2 items-center gap-2 whitespace-nowrap" aria-hidden="true">
+            <div className="hero-pedestal-inscription absolute bottom-[17%] left-1/2 z-[2] flex -translate-x-1/2 items-center gap-3 whitespace-nowrap" aria-hidden="true">
                 <Image
                     src="/images/lov-mark-transparent.png"
                     alt=""
                     width={54}
                     height={30}
-                    className="hero-pedestal-mark h-auto w-7"
+                    className="hero-pedestal-mark h-auto w-9"
                 />
-                <span className="hero-pedestal-name">LOSTONVISION</span>
+                <svg className="hero-pedestal-wordmark" viewBox="0 0 440 72" role="presentation">
+                    <defs>
+                        <linearGradient id="pedestal-lettering" x1="0" x2="0" y1="0" y2="1">
+                            <stop offset="0%" stopColor="#e4f0f4" />
+                            <stop offset="48%" stopColor="#9bb4c2" />
+                            <stop offset="100%" stopColor="#d0e1e7" />
+                        </linearGradient>
+                        <path id="pedestal-arc" d="M18 52 Q220 18 422 52" />
+                    </defs>
+                    <text className="hero-pedestal-arc-text">
+                        <textPath href="#pedestal-arc" startOffset="50%" textAnchor="middle">LOSTONVISION</textPath>
+                    </text>
+                </svg>
             </div>
             <div className="hero-scanlines absolute inset-0 opacity-15" />
 
