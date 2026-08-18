@@ -46,7 +46,7 @@ export default function Hero() {
                             <stop offset="58%" stopColor="#0a141a" />
                             <stop offset="100%" stopColor="#25363e" />
                         </linearGradient>
-                        <path id="pedestal-arc-mobile" d="M18 32 Q220 45 422 32" />
+                        <path id="pedestal-arc-mobile" d="M18 30 Q220 51 422 30" />
                     </defs>
                     <text className="hero-pedestal-arc-text hero-pedestal-cut-shadow">
                         <textPath href="#pedestal-arc-mobile" startOffset="50%" textAnchor="middle">LOSTONVISION</textPath>
