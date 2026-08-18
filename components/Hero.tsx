@@ -62,7 +62,7 @@ export default function Hero() {
             </div>
             <div className="hero-scanlines absolute inset-0 opacity-15" />
 
-            <p className="absolute left-6 top-28 z-10 text-[10px] font-medium tracking-[0.25em] text-white/65 sm:left-10">
+            <p className="hero-context-label absolute left-6 top-28 z-10 text-[10px] font-medium tracking-[0.25em] text-white/65 sm:left-10">
                 LOSTONVISION / DROP 01
             </p>
 

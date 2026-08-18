@@ -124,6 +124,10 @@ html {
 }
 
 @media (max-width: 639px) {
+  .hero-context-label {
+    display: none;
+  }
+
   .hero-shell,
   .hero-copy {
     min-height: 100svh;
