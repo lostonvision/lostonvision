@@ -108,6 +108,14 @@ html {
   opacity: 0.92;
 }
 
+.hero-pedestal-cut-face-mobile {
+  fill: url(#pedestal-cut-mobile);
+  stroke: rgba(0, 0, 0, 0.76);
+  stroke-width: 1.15px;
+  paint-order: stroke;
+  opacity: 0.92;
+}
+
 .hero-pedestal-cut-edge {
   fill: none;
   stroke: rgba(205, 216, 216, 0.3);
@@ -143,7 +151,7 @@ html {
   }
 
   .hero-pedestal-inscription {
-    bottom: 19%;
+    bottom: 20.5%;
     width: min(55vw, 230px);
   }
 

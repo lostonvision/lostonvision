@@ -18,7 +18,7 @@ export default function Hero() {
                 />
             </div>
             <div className="hero-pedestal-inscription absolute bottom-[9%] left-1/2 z-[2] w-[clamp(260px,33vw,460px)] -translate-x-1/2" aria-hidden="true">
-                <svg className="hero-pedestal-wordmark" viewBox="0 0 440 72" role="presentation">
+                <svg className="hero-pedestal-wordmark hidden sm:block" viewBox="0 0 440 72" role="presentation">
                     <defs>
                         <linearGradient id="pedestal-cut" x1="0" x2="0" y1="0" y2="1">
                             <stop offset="0%" stopColor="#65747a" />
@@ -36,6 +36,26 @@ export default function Hero() {
                     </text>
                     <text className="hero-pedestal-arc-text hero-pedestal-cut-edge">
                         <textPath href="#pedestal-arc" startOffset="50%" textAnchor="middle">LOSTONVISION</textPath>
+                    </text>
+                </svg>
+                <svg className="hero-pedestal-wordmark block sm:hidden" viewBox="0 0 440 72" role="presentation">
+                    <defs>
+                        <linearGradient id="pedestal-cut-mobile" x1="0" x2="0" y1="0" y2="1">
+                            <stop offset="0%" stopColor="#65747a" />
+                            <stop offset="20%" stopColor="#405158" />
+                            <stop offset="58%" stopColor="#0a141a" />
+                            <stop offset="100%" stopColor="#25363e" />
+                        </linearGradient>
+                        <path id="pedestal-arc-mobile" d="M18 32 Q220 45 422 32" />
+                    </defs>
+                    <text className="hero-pedestal-arc-text hero-pedestal-cut-shadow">
+                        <textPath href="#pedestal-arc-mobile" startOffset="50%" textAnchor="middle">LOSTONVISION</textPath>
+                    </text>
+                    <text className="hero-pedestal-arc-text hero-pedestal-cut-face-mobile">
+                        <textPath href="#pedestal-arc-mobile" startOffset="50%" textAnchor="middle">LOSTONVISION</textPath>
+                    </text>
+                    <text className="hero-pedestal-arc-text hero-pedestal-cut-edge">
+                        <textPath href="#pedestal-arc-mobile" startOffset="50%" textAnchor="middle">LOSTONVISION</textPath>
                     </text>
                 </svg>
                 <span className="hero-pedestal-mark absolute -right-5 top-5" />
