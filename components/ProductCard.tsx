@@ -21,7 +21,7 @@ export default function ProductCard({ piece }: Props) {
                 {piece.kind === "short" ? (
                     <svg className="future-short-svg" viewBox="0 0 240 180" aria-hidden="true">
                         <path
-                            d="M35 25 L205 25 L198 128 Q196 145 179 146 L154 146 Q146 145 141 136 L120 109 L99 136 Q94 145 86 146 L61 146 Q44 145 42 128 Z"
+                            d="M35 25 L205 25 L198 137 Q196 157 178 158 L153 158 Q145 157 140 148 L120 116 L100 148 Q95 157 87 158 L62 158 Q44 157 42 137 Z"
                             fill="#bfc0b8"
                         />
                     </svg>
