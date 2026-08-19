@@ -19,12 +19,13 @@ export default function ProductCard({ piece }: Props) {
         <article className="group block">
             <div className="future-silhouette relative flex aspect-[3/4] items-center justify-center bg-[#181818]">
                 {piece.kind === "short" ? (
-                    <svg className="future-short-svg" viewBox="0 0 240 205" aria-hidden="true">
-                        <path
-                            d="M32 22 H208 L201 147 Q199 172 181 174 H151 Q144 173 139 164 L120 129 L101 164 Q96 173 89 174 H59 Q41 172 39 147 Z"
-                            fill="#bfc0b8"
-                        />
-                    </svg>
+                    <Image
+                        src="/images/future-shorts-v1.png"
+                        alt=""
+                        width={1536}
+                        height={1024}
+                        className="future-short-image"
+                    />
                 ) : (
                     <div className={`future-piece ${silhouetteClass} bg-[#d4d4ce]`} aria-hidden="true" />
                 )}
@@ -38,3 +39,4 @@ export default function ProductCard({ piece }: Props) {
         </article>
     );
 }
+import Image from "next/image";
