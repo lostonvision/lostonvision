@@ -19,9 +19,9 @@ export default function ProductCard({ piece }: Props) {
         <article className="group block">
             <div className="future-silhouette relative flex aspect-[3/4] items-center justify-center bg-[#181818]">
                 {piece.kind === "short" ? (
-                    <svg className="future-short-svg" viewBox="0 0 240 180" aria-hidden="true">
+                    <svg className="future-short-svg" viewBox="0 0 240 205" aria-hidden="true">
                         <path
-                            d="M35 25 L205 25 L198 137 Q196 157 178 158 L153 158 Q145 157 140 148 L120 116 L100 148 Q95 157 87 158 L62 158 Q44 157 42 137 Z"
+                            d="M32 22 H208 L201 147 Q199 172 181 174 H151 Q144 173 139 164 L120 129 L101 164 Q96 173 89 174 H59 Q41 172 39 147 Z"
                             fill="#bfc0b8"
                         />
                     </svg>
